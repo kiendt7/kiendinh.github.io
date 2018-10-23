@@ -14,10 +14,10 @@ Progressive Web App (PWA)
 
 GraphQL support
 
-Declarative DB Schema
+Declarative DB Schema.
 
-Asynchronous and Bulk Web API
-Elasticsearch Updates (Moved to Magento Open Source)
+Asynchronous and Bulk Web API.
+Elasticsearch Updates (Moved to Magento Open Source).
 Complete PHP 7.2 Support
 Multi Source Inventory (MSI)
 WYSIWYG Upgrade
