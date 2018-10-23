@@ -1,52 +1,66 @@
-# Set theme
-remote_theme: daviddarnes/alembic
+# Site
+title:              Massively
+bio:                'Jekyll version of the Massively theme by HTML5UP'
+description:        "Jekyll version of the Massively theme by HTML5UP"
+locale:             en_US
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+background_image:   /images/bg.jpg
+# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
+formspree_thankyou_page: /thank-you
 
-# File excludes
-exclude:
-- README.md
-- Gemfile
-- Gemfile.lock
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
 
-# Set plugins
-plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-default-layout
-- jekyll-feed
-- jemoji
-- jekyll-remote-theme
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
-# Site settings
-url: 'https://kiendt7.github.io/'
-baseurl: ''
-title: 'Kien Dinh's Blog'
-description: 'This is my blog website'
-permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+# Comments
+disqus_shortname:   default
 
-# Pagination
-paginate: 5
-paginate_path: blog/page:num
+# Social
+analytics-id:       "default"
+twitter:            default
+facebook:           default
+instagram:          default
+github:             default
 
-# Header nav
-navigation_header:
-  Home: /
-  About: /about/
-  Blog: /blog/
+# personal
+location:           Los Angeles, CA
+phone:              310-318-5555
+email:              info@default.com
 
-# Footer nav
-navigation_footer:
-  Back to top: "#top"
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
-# Collections
-collections:
-  posts:
-    title: Posts
-    output: true
-    description: "My thoughts and ideas"
-    feature_text: |
-      Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
