@@ -11,8 +11,11 @@ Back in April this year, Magento announced at the Magento Imagine conference abo
 This article will outline the most exciting features which this major release, scheduled later this year, will bring:
 
 Progressive Web App (PWA)
+
 GraphQL support
+
 Declarative DB Schema
+
 Asynchronous and Bulk Web API
 Elasticsearch Updates (Moved to Magento Open Source)
 Complete PHP 7.2 Support
